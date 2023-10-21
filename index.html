@@ -1,35 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Granja de Pollos-Ecopluma</title>
+  <title>Pollos Ecopluma - Granja de Pollos de Campo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    /* Estilos para el cuerpo de la página */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
+
+    /* Estilos para el encabezado */
     header {
       background-color: #FFD700;
       color: #333;
       text-align: center;
       padding: 20px;
     }
+
+    /* Estilos para la barra de navegación */
     nav {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 10px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 20px;
     }
+
+    /* Estilos para el contenedor principal */
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
     }
+
+    /* Estilos para la sección "Acerca de Nosotros" */
+    .about-us {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para los botones de redes sociales */
+    .social-buttons {
+      margin-top: 20px;
+    }
+
+    .social-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0077B5;
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+
+    /* Estilos para la sección "Formas de Pago" */
+    .payment-methods {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para el sistema de Carrito y Pago */
+    .shopping-cart {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .checkout-button {
+      display: block;
+      background-color: #FFD700;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    /* Estilos para la sección de productos */
+    .products {
+      margin-top: 20px;
+    }
+
     .product-card {
       border: 1px solid #ddd;
       padding: 20px;
@@ -38,22 +101,41 @@
       justify-content: space-between;
       align-items: center;
     }
+
     .product-image {
       flex: 1;
-      max-width: 40%;
+      max-width: 100px;
+      max-height: 100px;
     }
+
     .product-details {
       flex: 1;
       padding: 0 20px;
     }
+
     .product-details h3 {
       margin-top: 0;
     }
+
     .product-price {
       font-size: 24px;
       color: #FFD700;
       margin-bottom: 10px;
     }
+
+    /* Estilos para los botones de compra de productos */
+    .whatsapp-button {
+      display: block;
+      background-color: #25D366;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    /* Estilos para el pie de página */
     footer {
       background-color: #333;
       color: white;
@@ -64,7 +146,7 @@
 </head>
 <body>
   <header>
-    <h1>Granja de Pollos de Campo</h1>
+    <h1>Pollos Ecopluma - Granja de Pollos de Campo</h1>
     <p>Pollos saludables criados en entornos naturales.</p>
   </header>
   <nav>
@@ -73,33 +155,68 @@
     <a href="#">Contacto</a>
   </nav>
   <div class="container">
-    <div class="product-card">
-      <div class="product-image">
-        <img src="pollo1.jpg" alt="Pollo de Campo 1">
-      </div>
-      <div class="product-details">
-        <h3>Pollo de Campo Gordo</h3>
-        <p>Pollo criado en libertad, alimentado con granos naturales.</p>
-        <p class="product-price">$15.99/kg</p>
-        <button>Agregar al Carrito</button>
-      </div>
+    <!-- Sección "Acerca de Nosotros" -->
+    <section class="about-us">
+      <h2>Acerca de Nosotros</h2>
+      <p>Somos una granja dedicada a criar pollos en entornos naturales y ofrecer productos de alta calidad a nuestros clientes. Nuestra misión es proporcionar alimentos saludables y sostenibles.</p>
+    </section>
+    
+    <!-- Botones de redes sociales con diseño personalizado -->
+    <div class="social-buttons">
+      <a href="https://www.facebook.com/TUPAGINA" class="social-button">Facebook</a>
+      <a href="https://www.instagram.com/TUCUENTA" class="social-button">Instagram</a>
+      <a href="https://twitter.com/TUCUENTA" class="social-button">Twitter</a>
     </div>
-    <div class="product-card">
-      <div class="product-image">
-        <img src="pollo2.jpg" alt="Pollo de Campo 2">
+    
+    <!-- Sección de productos -->
+    <section class="products">
+      <h2>Nuestros Productos</h2>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="pollo1.jpg" alt="Pollo de Campo 1">
+        </div>
+        <div class="product-details">
+          <h3>Pollo de Campo Gordo</h3>
+          <p>Pollo criado en libertad, alimentado con granos naturales.</p>
+          <p class="product-price">$45.000</p>
+          <a href="https://wa.me/573206816895?text=¡Hola! Estoy interesado en comprar el Pollo de Campo Gordo." class="whatsapp-button">Comprar en WhatsApp</a>
+        </div>
       </div>
-      <div class="product-details">
-        <h3>Pollo de Campo pequeño
-        </h3>
-        <p>Pollo criado en entorno orgánico, sin químicos ni antibióticos.</p>
-        <p class="product-price">$18.99/kg</p>
-        <button>Agregar al Carrito</button>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="pollo2.jpg" alt="Pollo de Campo 2">
+        </div>
+        <div class="product-details">
+          <h3>Pollo de Campo Pequeño</h3>
+          <p>Pollo criado en entorno orgánico, sin químicos ni antibióticos.</p>
+          <p class="product-price">$35.000</p>
+          <a href="https://wa.me/573206816895?text=¡Hola! Estoy interesado en comprar el Pollo de Campo Pequeño." class="whatsapp-button">Comprar en WhatsApp</a>
+        </div>
       </div>
-    </div>
-    <!-- Agrega más productos aquí -->
+      <!-- Agrega más productos aquí -->
+    </section>
+    
+    <!-- Formas de pago -->
+    <section class="payment-methods">
+      <h2>Formas de Pago</h2>
+      <p>Aceptamos las siguientes formas de pago:</p>
+      <ul>
+        <li>Tarjeta de crédito</li>
+        <li>PayPal</li>
+        <li>Transferencia bancaria</li>
+      </ul>
+    </section>
+    
+    <!-- Sistema de Carrito y Pago (conceptual) -->
+    <section class="shopping-cart">
+      <h2>Carrito de Compras</h2>
+      <!-- Aquí iría la lista de productos en el carrito -->
+      <!-- Un botón para finalizar la compra -->
+      <a href="pagina-de-pago.html" class="checkout-button">Finalizar Compra</a>
+    </section>
   </div>
   <footer>
-    <p>&copy; 2023 Granja de Pollos de Campo. Todos los derechos reservados.</p>
+    <p>&copy; 2023 Pollos Ecopluma - Granja de Pollos de Campo. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
